@@ -1,0 +1,12 @@
+module pdf {
+    interface PDFService {
+        string mergePDF(in string path1, in string path2, in string output);
+        string splitPDF(in string path, in long pages, in string outputDir);
+        string extractPages(in string path, in long fromPage, in long toPage, in string output);
+        string deletePages(in string path, in long fromPage, in long toPage, in string output);
+        string addPassword(in string path, in string password, in string output);
+        string convertToImages(in string path, in string outputDir);
+        string extractText(in string path);
+        string createPDF(in string content, in string output);
+    };
+};
