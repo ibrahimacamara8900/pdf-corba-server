@@ -1,0 +1,388 @@
+[2026-05-20 00:33:35] [INFO ] === Démarrage PDF CORBA Server ===
+[2026-05-20 00:33:36] [OK   ] CORBA connecté → 172.26.20.100:1050
+[2026-05-20 00:33:36] [OK   ] Serveur Web démarré → http://localhost:8080
+[2026-05-20 00:33:36] [OK   ] Accès: http://localhost:8080 | http://172.26.20.100:8080
+[2026-05-20 00:34:28] [INFO ] REQ GET / ← 127.0.0.1
+[2026-05-20 00:34:28] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:34:28] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 00:34:28] [INFO ] REQ GET /api/list ← 127.0.0.1
+[2026-05-20 00:34:33] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:34:33] [INFO ] REQ GET /api/convert-images ← 127.0.0.1
+[2026-05-20 00:34:33] [WARN ] Validation: Nom de fichier vide
+[2026-05-20 00:34:33] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:34:37] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:34:37] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 00:34:45] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:34:45] [INFO ] REQ GET /api/list ← 127.0.0.1
+[2026-05-20 00:34:46] [INFO ] REQ GET /api/extract-text ← 127.0.0.1
+[2026-05-20 00:34:48] [ERROR] Erreur: ----------BEGIN server-side stack trace----------
+org.omg.CORBA.DATA_CONVERSION:   vmcid: OMG  minor code: 1  completed: No
+	at com.sun.corba.se.impl.logging.OMGSystemException.charNotInCodeset(OMGSystemException.java:2093)
+	at com.sun.corba.se.impl.logging.OMGSystemException.charNotInCodeset(OMGSystemException.java:2111)
+	at com.sun.corba.se.impl.encoding.CodeSetConversion$JavaCTBConverter.convertCharArray(CodeSetConversion.java:277)
+	at com.sun.corba.se.impl.encoding.CodeSetConversion$JavaCTBConverter.convert(CodeSetConversion.java:224)
+	at com.sun.corba.se.impl.encoding.CDROutputStream_1_0.writeString(CDROutputStream_1_0.java:484)
+	at com.sun.corba.se.impl.encoding.CDROutputStream_1_0.write_string(CDROutputStream_1_0.java:473)
+	at com.sun.corba.se.impl.encoding.CDROutputStream.write_string(CDROutputStream.java:171)
+	at pdf.PDFServicePOA._invoke(PDFServicePOA.java:120)
+	at com.sun.corba.se.impl.protocol.CorbaServerRequestDispatcherImpl.dispatchToServant(CorbaServerRequestDispatcherImpl.java:654)
+	at com.sun.corba.se.impl.protocol.CorbaServerRequestDispatcherImpl.dispatch(CorbaServerRequestDispatcherImpl.java:205)
+	at com.sun.corba.se.impl.protocol.CorbaMessageMediatorImpl.handleRequestRequest(CorbaMessageMediatorImpl.java:1700)
+	at com.sun.corba.se.impl.protocol.CorbaMessageMediatorImpl.handleRequest(CorbaMessageMediatorImpl.java:1558)
+	at com.sun.corba.se.impl.protocol.CorbaMessageMediatorImpl.handleInput(CorbaMessageMediatorImpl.java:940)
+	at com.sun.corba.se.impl.protocol.giopmsgheaders.RequestMessage_1_2.callback(RequestMessage_1_2.java:198)
+	at com.sun.corba.se.impl.protocol.CorbaMessageMediatorImpl.handleRequest(CorbaMessageMediatorImpl.java:712)
+	at com.sun.corba.se.impl.transport.SocketOrChannelConnectionImpl.dispatch(SocketOrChannelConnectionImpl.java:474)
+	at com.sun.corba.se.impl.transport.SocketOrChannelConnectionImpl.doWork(SocketOrChannelConnectionImpl.java:1237)
+	at com.sun.corba.se.impl.orbutil.threadpool.ThreadPoolImpl$WorkerThread.performWork(ThreadPoolImpl.java:490)
+	at com.sun.corba.se.impl.orbutil.threadpool.ThreadPoolImpl$WorkerThread.run(ThreadPoolImpl.java:519)
+Caused by: java.nio.charset.UnmappableCharacterException: Input length = 1
+	at java.nio.charset.CoderResult.throwException(CoderResult.java:282)
+	at java.nio.charset.CharsetEncoder.encode(CharsetEncoder.java:816)
+	at com.sun.corba.se.impl.encoding.CodeSetConversion$JavaCTBConverter.convertCharArray(CodeSetConversion.java:262)
+	... 16 more
+
+----------END server-side stack trace----------
+[2026-05-20 00:34:48] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:34:49] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:34:49] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 00:34:54] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:34:58] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:34:58] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 00:34:58] [INFO ] REQ GET /api/list ← 127.0.0.1
+[2026-05-20 00:35:03] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:35:06] [INFO ] REQ GET /api/password ← 127.0.0.1
+[2026-05-20 00:35:06] [OK   ] addPassword → secured_1779237306160.pdf
+[2026-05-20 00:35:06] [INFO ] REQ GET /api/list ← 127.0.0.1
+[2026-05-20 00:35:06] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:35:08] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:35:08] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 00:35:12] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:35:12] [INFO ] REQ GET /api/list ← 127.0.0.1
+[2026-05-20 00:35:20] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 00:35:20] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:35:21] [INFO ] REQ GET /download/secured_1779237306160.pdf ← 127.0.0.1
+[2026-05-20 00:35:21] [INFO ] Download: secured_1779237306160.pdf (1027570 bytes)
+[2026-05-20 00:35:25] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:35:30] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:35:30] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 00:35:30] [INFO ] REQ GET /api/list ← 127.0.0.1
+[2026-05-20 00:35:34] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:35:39] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:35:39] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 00:35:43] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:35:43] [INFO ] REQ GET /api/list ← 127.0.0.1
+[2026-05-20 00:35:48] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 00:35:48] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:35:55] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:35:59] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:35:59] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 00:35:59] [INFO ] REQ GET /api/list ← 127.0.0.1
+[2026-05-20 00:36:04] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:36:08] [INFO ] REQ GET / ← 127.0.0.1
+[2026-05-20 00:36:08] [INFO ] REQ GET /api/list ← 127.0.0.1
+[2026-05-20 00:36:08] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:36:08] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 00:36:13] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:36:17] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:36:17] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 00:36:22] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:36:22] [INFO ] REQ GET /api/list ← 127.0.0.1
+[2026-05-20 00:36:26] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 00:36:26] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:36:34] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:36:38] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:36:39] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 00:36:39] [INFO ] REQ GET /api/list ← 127.0.0.1
+[2026-05-20 00:36:43] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:36:48] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:36:48] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 00:36:52] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:36:52] [INFO ] REQ GET /api/list ← 127.0.0.1
+[2026-05-20 00:36:57] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 00:36:57] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:36:59] [INFO ] REQ GET /status ← 127.0.0.1
+[2026-05-20 00:37:02] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:37:07] [INFO ] REQ GET /status ← 127.0.0.1
+[2026-05-20 00:37:09] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:37:09] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 00:37:09] [INFO ] REQ GET /api/list ← 127.0.0.1
+[2026-05-20 00:37:12] [INFO ] REQ GET /status ← 127.0.0.1
+[2026-05-20 00:37:14] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:37:16] [INFO ] REQ GET /status ← 127.0.0.1
+[2026-05-20 00:37:18] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:37:18] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 00:37:21] [INFO ] REQ GET /status ← 127.0.0.1
+[2026-05-20 00:37:23] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:37:23] [INFO ] REQ GET /api/list ← 127.0.0.1
+[2026-05-20 00:37:25] [INFO ] REQ GET /status ← 127.0.0.1
+[2026-05-20 00:37:27] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 00:37:27] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:37:30] [INFO ] REQ GET /status ← 127.0.0.1
+[2026-05-20 00:37:32] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:37:35] [INFO ] REQ GET /status ← 127.0.0.1
+[2026-05-20 00:37:37] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:37:37] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 00:37:37] [INFO ] REQ GET /api/list ← 127.0.0.1
+[2026-05-20 00:37:42] [INFO ] REQ GET /status ← 127.0.0.1
+[2026-05-20 00:37:44] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:37:47] [INFO ] REQ GET /status ← 127.0.0.1
+[2026-05-20 00:37:52] [INFO ] REQ GET /status ← 127.0.0.1
+[2026-05-20 00:37:56] [INFO ] REQ GET /status ← 127.0.0.1
+[2026-05-20 00:37:59] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:37:59] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 00:37:59] [INFO ] REQ GET /api/list ← 127.0.0.1
+[2026-05-20 00:38:01] [INFO ] REQ GET /status ← 127.0.0.1
+[2026-05-20 00:38:02] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:38:06] [INFO ] REQ GET /status ← 127.0.0.1
+[2026-05-20 00:38:07] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:38:07] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 00:38:07] [INFO ] REQ GET /api/list ← 127.0.0.1
+[2026-05-20 00:38:10] [INFO ] REQ GET /status ← 127.0.0.1
+[2026-05-20 00:38:11] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:38:18] [INFO ] REQ GET /status ← 127.0.0.1
+[2026-05-20 00:38:19] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:38:19] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 00:38:23] [INFO ] REQ GET /status ← 127.0.0.1
+[2026-05-20 00:38:24] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:38:24] [INFO ] REQ GET /api/list ← 127.0.0.1
+[2026-05-20 00:38:27] [INFO ] REQ GET /status ← 127.0.0.1
+[2026-05-20 00:38:28] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:38:28] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 00:38:32] [INFO ] REQ GET /status ← 127.0.0.1
+[2026-05-20 00:38:33] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:38:37] [INFO ] REQ GET /status ← 127.0.0.1
+[2026-05-20 00:38:38] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:38:38] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 00:38:38] [INFO ] REQ GET /api/list ← 127.0.0.1
+[2026-05-20 00:38:41] [INFO ] REQ GET /status ← 127.0.0.1
+[2026-05-20 00:38:42] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:38:46] [INFO ] REQ GET /status ← 127.0.0.1
+[2026-05-20 00:38:47] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:38:47] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 00:38:54] [INFO ] REQ GET /status ← 127.0.0.1
+[2026-05-20 00:38:54] [INFO ] REQ GET /api/list ← 127.0.0.1
+[2026-05-20 00:38:54] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:38:58] [INFO ] REQ GET /status ← 127.0.0.1
+[2026-05-20 00:38:59] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 00:38:59] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:39:03] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:39:04] [INFO ] REQ GET /status ← 127.0.0.1
+[2026-05-20 00:39:08] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:39:08] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 00:39:08] [INFO ] REQ GET /api/list ← 127.0.0.1
+[2026-05-20 00:39:09] [INFO ] REQ GET /status ← 127.0.0.1
+[2026-05-20 00:39:12] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:39:13] [INFO ] REQ GET /status ← 127.0.0.1
+[2026-05-20 00:39:17] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 00:39:17] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:39:18] [INFO ] REQ GET /status ← 127.0.0.1
+[2026-05-20 00:39:22] [INFO ] REQ GET /status ← 127.0.0.1
+[2026-05-20 00:39:30] [INFO ] REQ GET /status ← 127.0.0.1
+[2026-05-20 00:39:35] [INFO ] REQ GET /status ← 127.0.0.1
+[2026-05-20 00:39:39] [INFO ] REQ GET /status ← 127.0.0.1
+[2026-05-20 00:39:44] [INFO ] REQ GET /status ← 127.0.0.1
+[2026-05-20 00:39:49] [INFO ] REQ GET /status ← 127.0.0.1
+✅ Serveur PDF CORBA démarré sur port 1050...
+[2026-05-20 00:40:55] [INFO ] === Démarrage PDF CORBA Server ===
+[2026-05-20 00:40:55] [OK   ] CORBA connecté → 172.26.20.100:1050
+[2026-05-20 00:40:55] [OK   ] Serveur Web démarré → http://localhost:8080
+[2026-05-20 00:40:55] [OK   ] Accès: http://localhost:8080 | http://172.26.20.100:8080
+[2026-05-20 00:41:07] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:41:07] [INFO ] REQ GET /api/list ← 127.0.0.1
+[2026-05-20 00:41:07] [INFO ] REQ GET /api/status ← 127.0.0.1
+May 20, 2026 12:41:12 AM org.apache.pdfbox.pdmodel.font.PDType1Font <init>
+WARNING: Using fallback font LiberationSans for base font Symbol
+May 20, 2026 12:41:12 AM org.apache.pdfbox.pdmodel.font.PDType1Font <init>
+WARNING: Using fallback font LiberationSans for base font ZapfDingbats
+[2026-05-20 00:41:14] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:41:19] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:41:19] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 00:41:23] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:41:23] [INFO ] REQ GET /api/list ← 127.0.0.1
+[2026-05-20 00:41:28] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:41:28] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 00:41:32] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:41:35] [INFO ] REQ GET /status ← 127.0.0.1
+[2026-05-20 00:41:40] [INFO ] REQ GET /status ← 127.0.0.1
+[2026-05-20 00:41:44] [INFO ] REQ GET /status ← 127.0.0.1
+[2026-05-20 00:41:49] [INFO ] REQ GET /status ← 127.0.0.1
+[2026-05-20 00:41:50] [INFO ] REQ GET /status ← 127.0.0.1
+[2026-05-20 00:41:53] [INFO ] REQ GET /status ← 127.0.0.1
+[2026-05-20 00:41:58] [INFO ] REQ GET /status ← 127.0.0.1
+[2026-05-20 00:42:01] [INFO ] REQ GET / ← 127.0.0.1
+[2026-05-20 00:42:01] [INFO ] REQ GET /api/list ← 127.0.0.1
+[2026-05-20 00:42:01] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:42:01] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 00:42:06] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:42:12] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:42:12] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 00:42:17] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:42:17] [INFO ] REQ GET /api/list ← 127.0.0.1
+[2026-05-20 00:42:26] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 00:42:26] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:42:31] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:42:36] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:42:36] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 00:42:36] [INFO ] REQ GET /api/list ← 127.0.0.1
+[2026-05-20 00:42:41] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:42:45] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:42:45] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 00:42:50] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:42:50] [INFO ] REQ GET /api/list ← 127.0.0.1
+[2026-05-20 00:42:54] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:42:54] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 00:43:01] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:43:06] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:43:06] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 00:43:06] [INFO ] REQ GET /api/list ← 127.0.0.1
+[2026-05-20 00:43:10] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:43:15] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:43:15] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 00:43:19] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:43:19] [INFO ] REQ GET /api/list ← 127.0.0.1
+[2026-05-20 00:43:24] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:43:24] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 00:43:29] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:43:36] [INFO ] REQ GET /api/list ← 127.0.0.1
+[2026-05-20 00:44:14] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:44:14] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 00:44:14] [INFO ] REQ GET /api/list ← 127.0.0.1
+[2026-05-20 00:45:12] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:45:12] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 00:45:12] [INFO ] REQ GET /api/list ← 127.0.0.1
+[2026-05-20 00:46:13] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 00:46:13] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:46:13] [INFO ] REQ GET /api/list ← 127.0.0.1
+[2026-05-20 00:48:46] [INFO ] === Démarrage PDF CORBA Server ===
+[2026-05-20 00:48:46] [OK   ] CORBA connecté → 172.26.20.100:1050
+[2026-05-20 00:48:46] [OK   ] Serveur Web démarré → http://localhost:8080
+[2026-05-20 00:48:46] [OK   ] Accès: http://localhost:8080 | http://172.26.20.100:8080
+[2026-05-20 00:49:15] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 00:49:15] [INFO ] REQ GET /api/list ← 127.0.0.1
+[2026-05-20 00:49:15] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:53:22] [INFO ] === PDF CORBA Server démarrage ===
+[2026-05-20 00:53:22] [OK   ] CORBA connecté → 172.26.20.100:1050
+[2026-05-20 00:53:22] [OK   ] Serveur Web → http://localhost:8080
+[2026-05-20 00:53:22] [OK   ] Interface: http://localhost:8080 | http://172.26.20.100:8080
+[2026-05-20 00:53:26] [INFO ] REQ GET /api/list ← 127.0.0.1
+[2026-05-20 00:53:26] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 00:53:26] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:53:29] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:53:33] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:53:33] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 00:53:33] [INFO ] REQ GET /api/list ← 127.0.0.1
+[2026-05-20 00:53:34] [INFO ] REQ GET / ← 127.0.0.1
+[2026-05-20 00:53:34] [INFO ] REQ GET /api/list ← 127.0.0.1
+[2026-05-20 00:53:34] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:53:34] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 00:53:42] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:53:46] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:53:46] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 00:53:51] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:53:55] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:53:55] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 00:54:00] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:54:04] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:54:04] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 00:54:04] [INFO ] REQ GET /api/list ← 127.0.0.1
+[2026-05-20 00:54:09] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:54:17] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:54:17] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 00:54:21] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:54:26] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:54:26] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 00:54:30] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:54:35] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:54:35] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 00:54:35] [INFO ] REQ GET /api/list ← 127.0.0.1
+[2026-05-20 00:54:39] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:54:44] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 00:54:44] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 01:02:30] [INFO ] === PDF CORBA Server démarrage ===
+[2026-05-20 01:02:30] [OK   ] CORBA connecté → 172.26.20.100:1050
+[2026-05-20 01:02:30] [OK   ] Serveur Web → http://localhost:8080
+[2026-05-20 01:02:30] [OK   ] Interface: http://localhost:8080 | http://172.26.20.100:8080
+[2026-05-20 01:03:14] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 01:03:14] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 01:03:14] [INFO ] REQ GET /api/list ← 127.0.0.1
+[2026-05-20 01:06:21] [INFO ] === PDF CORBA Server démarrage ===
+[2026-05-20 01:06:21] [OK   ] CORBA connecté → 172.26.20.100:1050
+[2026-05-20 01:06:21] [OK   ] Serveur Web → http://localhost:8080
+[2026-05-20 01:06:21] [OK   ] Interface: http://localhost:8080 | http://172.26.20.100:8080
+[2026-05-20 01:06:30] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 01:06:30] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 01:06:31] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 01:06:31] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 01:06:31] [INFO ] REQ GET /api/list ← 127.0.0.1
+[2026-05-20 01:06:32] [INFO ] REQ GET / ← 127.0.0.1
+[2026-05-20 01:06:32] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 01:06:32] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 01:06:32] [INFO ] REQ GET /api/list ← 127.0.0.1
+[2026-05-20 01:06:36] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 01:06:47] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 01:06:47] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 01:06:52] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 01:06:57] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 01:06:57] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 01:07:01] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 01:07:06] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 01:07:06] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 01:07:06] [INFO ] REQ GET /api/list ← 127.0.0.1
+[2026-05-20 01:07:10] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 01:07:15] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 01:07:15] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 01:07:22] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 01:07:27] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 01:07:27] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 01:07:32] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 01:07:36] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 01:07:36] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 01:07:36] [INFO ] REQ GET /api/list ← 127.0.0.1
+[2026-05-20 01:07:41] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 01:07:45] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 01:07:45] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 01:07:50] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 01:07:55] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 01:07:55] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 01:07:59] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 01:08:04] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 01:08:04] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 01:08:04] [INFO ] REQ GET /api/list ← 127.0.0.1
+[2026-05-20 01:08:13] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 01:08:18] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 01:08:18] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 01:08:22] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 01:08:27] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 01:08:27] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 01:08:31] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 01:08:36] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 01:08:36] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 01:08:36] [INFO ] REQ GET /api/list ← 127.0.0.1
+[2026-05-20 01:08:41] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 01:08:48] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 01:08:48] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 01:08:52] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 01:08:57] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 01:08:57] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 01:09:01] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 01:09:06] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 01:09:06] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 01:09:06] [INFO ] REQ GET /api/list ← 127.0.0.1
+[2026-05-20 01:09:11] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 01:09:15] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 01:09:15] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 01:09:23] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 01:09:28] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 01:09:28] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 01:09:34] [INFO ] === PDF CORBA Server démarrage ===
+[2026-05-20 01:09:34] [OK   ] CORBA connecté → 172.26.20.100:1050
+[2026-05-20 01:09:34] [OK   ] Serveur Web → http://localhost:8080
+[2026-05-20 01:09:34] [OK   ] Interface: http://localhost:8080 | http://172.26.20.100:8080
+[2026-05-20 01:09:35] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 01:09:37] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 01:09:37] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 01:09:37] [INFO ] REQ GET /api/list ← 127.0.0.1
+[2026-05-20 01:09:42] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 01:09:46] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 01:09:46] [INFO ] REQ GET /api/status ← 127.0.0.1
