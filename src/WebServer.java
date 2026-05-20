@@ -10,7 +10,7 @@ public class WebServer extends NanoHTTPD {
     private final long startTime = System.currentTimeMillis();
 
     public WebServer(CORBAConnector corba) throws IOException {
-        super(8080); this.corba = corba;
+        super(System.getenv("PORT") != null ? Integer.parseInt(System.getenv("PORT")) : 8080); this.corba = corba;
         new File(HOME).mkdirs();
         start(NanoHTTPD.SOCKET_READ_TIMEOUT, false);
         Logger.ok("Serveur Web → http://localhost:8080");
@@ -175,7 +175,9 @@ Ligne 3</textarea><button class=\'btn\' onclick="act(\'create\',{content:g(\'cc\
 
     public static void main(String[] args) throws IOException {
         Logger.info("=== PDF CORBA Server démarrage ===");
-        CORBAConnector corba = new CORBAConnector("172.26.20.100", 1050);
+        String corbaHost = System.getenv("CORBA_HOST") != null ? System.getenv("CORBA_HOST") : "localhost";
+        int corbaPort = System.getenv("CORBA_PORT") != null ? Integer.parseInt(System.getenv("CORBA_PORT")) : 1050;
+        CORBAConnector corba = new CORBAConnector(corbaHost, corbaPort);
         new WebServer(corba);
         Logger.ok("Interface: http://localhost:8080 | http://172.26.20.100:8080");
         try { Thread.currentThread().join(); } catch (InterruptedException e) {}
