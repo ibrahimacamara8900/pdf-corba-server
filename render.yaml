@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: pdf-corba-server
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: PORT
+        value: 8080
+      - key: CORBA_HOST
+        value: localhost
+      - key: CORBA_PORT
+        value: 1050
