@@ -386,3 +386,55 @@ WARNING: Using fallback font LiberationSans for base font ZapfDingbats
 [2026-05-20 01:09:42] [INFO ] REQ GET /api/logs ← 127.0.0.1
 [2026-05-20 01:09:46] [INFO ] REQ GET /api/logs ← 127.0.0.1
 [2026-05-20 01:09:46] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 06:51:12] [INFO ] === PDF CORBA Server démarrage ===
+[2026-05-20 06:51:15] [OK   ] CORBA connecté → 172.26.20.100:1050
+[2026-05-20 06:51:15] [OK   ] Serveur Web → http://localhost:8080
+[2026-05-20 06:51:15] [OK   ] Interface: http://localhost:8080 | http://172.26.20.100:8080
+[2026-05-20 06:52:00] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 06:52:00] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 06:52:00] [INFO ] REQ GET /api/list ← 127.0.0.1
+[2026-05-20 06:53:02] [INFO ] REQ GET /api/logs ← 127.0.0.1
+[2026-05-20 06:53:02] [INFO ] REQ GET /api/status ← 127.0.0.1
+[2026-05-20 06:53:02] [INFO ] REQ GET /api/list ← 127.0.0.1
+[2026-05-20 06:54:39] [INFO ] === PDF CORBA Server demarrage ===
+[2026-05-20 06:54:39] [OK   ] CORBA connecté → localhost:1050
+[2026-05-20 06:54:39] [OK   ] Serveur Web demarre
+[2026-05-20 06:54:39] [OK   ] Interface: http://localhost:8080
+[2026-05-20 06:54:49] [INFO ] REQ GET /api/list <- 127.0.0.1
+[2026-05-20 06:54:49] [INFO ] REQ GET /api/logs <- 127.0.0.1
+[2026-05-20 06:54:49] [INFO ] REQ GET /api/status <- 127.0.0.1
+[2026-05-20 06:54:50] [INFO ] REQ GET /api/logs <- 127.0.0.1
+[2026-05-20 06:54:53] [INFO ] REQ GET / <- 127.0.0.1
+[2026-05-20 06:54:53] [INFO ] REQ GET /api/list <- 127.0.0.1
+[2026-05-20 06:54:53] [INFO ] REQ GET /api/logs <- 127.0.0.1
+[2026-05-20 06:54:53] [INFO ] REQ GET /api/status <- 127.0.0.1
+[2026-05-20 06:54:58] [INFO ] REQ GET /api/logs <- 127.0.0.1
+[2026-05-20 06:55:03] [INFO ] REQ GET /api/logs <- 127.0.0.1
+[2026-05-20 06:55:04] [INFO ] REQ GET /api/status <- 127.0.0.1
+[2026-05-20 06:55:08] [INFO ] REQ GET /api/logs <- 127.0.0.1
+[2026-05-20 06:55:11] [INFO ] REQ GET / <- 127.0.0.1
+[2026-05-20 06:55:11] [INFO ] REQ GET /api/list <- 127.0.0.1
+[2026-05-20 06:55:11] [INFO ] REQ GET /api/logs <- 127.0.0.1
+[2026-05-20 06:55:11] [INFO ] REQ GET /api/status <- 127.0.0.1
+[2026-05-20 06:55:16] [INFO ] REQ GET /api/logs <- 127.0.0.1
+[2026-05-20 06:55:21] [INFO ] REQ GET /api/logs <- 127.0.0.1
+[2026-05-20 06:55:21] [INFO ] REQ GET /api/status <- 127.0.0.1
+[2026-05-20 06:55:26] [INFO ] REQ GET /api/logs <- 127.0.0.1
+[2026-05-20 06:55:31] [INFO ] REQ GET /api/logs <- 127.0.0.1
+[2026-05-20 06:55:31] [INFO ] REQ GET /api/status <- 127.0.0.1
+[2026-05-20 06:55:35] [INFO ] REQ GET /api/logs <- 127.0.0.1
+[2026-05-20 06:55:40] [INFO ] REQ GET /api/logs <- 127.0.0.1
+[2026-05-20 06:55:40] [INFO ] REQ GET /api/list <- 127.0.0.1
+[2026-05-20 06:55:40] [INFO ] REQ GET /api/status <- 127.0.0.1
+[2026-05-20 06:55:43] [INFO ] REQ GET /api/password <- 127.0.0.1
+[2026-05-20 06:55:43] [WARN ] Validation: Nom de fichier vide
+[2026-05-20 06:55:43] [INFO ] REQ GET /api/logs <- 127.0.0.1
+[2026-05-20 06:55:45] [INFO ] REQ GET /api/logs <- 127.0.0.1
+[2026-05-20 06:55:45] [INFO ] REQ GET /api/extract-text <- 127.0.0.1
+[2026-05-20 06:55:45] [WARN ] Validation: Nom de fichier vide
+[2026-05-20 06:55:45] [INFO ] REQ GET /api/logs <- 127.0.0.1
+[2026-05-20 06:55:49] [INFO ] REQ GET /api/logs <- 127.0.0.1
+[2026-05-20 06:55:49] [INFO ] REQ GET /api/status <- 127.0.0.1
+[2026-05-20 06:55:54] [INFO ] REQ GET /api/logs <- 127.0.0.1
+[2026-05-20 06:55:58] [INFO ] REQ GET /api/logs <- 127.0.0.1
+[2026-05-20 06:55:58] [INFO ] REQ GET /api/status <- 127.0.0.1

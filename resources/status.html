@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"><title>Statut</title>
+<meta http-equiv="refresh" content="5">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:system-ui,sans-serif;background:#f0f4f8;color:#1a2332;padding:30px}
+h1{font-size:20px;font-weight:600;margin-bottom:20px;color:#1e3a5f}
+.box{background:#fff;border:1px solid #d1dae3;border-radius:12px;padding:18px;margin-bottom:14px}
+.lbl{font-size:11px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:.8px;margin-bottom:6px}
+.val{font-size:16px;font-weight:600}
+.ok{color:#16a34a}.err{color:#dc2626}
+.sub{font-size:12px;color:#64748b;margin-top:4px}
+pre{font-size:11px;color:#64748b;line-height:1.7;overflow:auto;max-height:250px;margin-top:8px}
+a{color:#2563eb;text-decoration:none;font-size:13px}
+</style></head><body>
+<h1>Statut du serveur PDF CORBA</h1>
+<div class="box">
+  <div class="lbl">Serveur Web</div>
+  <div class="val ok">En ligne - Port 8080</div>
+  <div class="sub">Uptime: {{UPTIME}}</div>
+</div>
+<div class="box">
+  <div class="lbl">Serveur CORBA</div>
+  <div class="val {{CORBA_CLASS}}">{{CORBA_LABEL}}</div>
+  <div class="sub">{{CORBA_HOST}} - Reconnexions: {{RECONNECTS}}</div>
+</div>
+<div class="box">
+  <div class="lbl">Logs recents</div>
+  <pre>{{LOGS}}</pre>
+</div>
+<a href="/">← Retour a l'interface</a>
+</body></html>

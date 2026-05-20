@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY . .
 
-RUN mkdir -p build pdfs resources
+RUN mkdir -p build pdfs
 
 RUN cd src && idlj -fall PDFService.idl && cd ..
 
