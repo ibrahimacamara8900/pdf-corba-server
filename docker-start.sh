@@ -2,7 +2,6 @@
 export APP_HOME=/app
 JAVA=java
 JAR="lib/pdfbox-app-2.0.30.jar:lib/nanohttpd-2.3.1.jar"
-
 mkdir -p /app/pdfs
 
 echo "▶ Démarrage NameService CORBA..."
@@ -17,8 +16,7 @@ $JAVA -cp "build:lib/pdfbox-app-2.0.30.jar" \
 sleep 3
 
 echo "▶ Démarrage Serveur Web..."
-$JAVA -cp "build:$JAR" \
-    -DAPP_HOME=/app \
+APP_HOME=/app $JAVA -cp "build:$JAR" \
     -Dorg.omg.CORBA.ORBInitialPort=1050 \
     -Dorg.omg.CORBA.ORBInitialHost=localhost \
     WebServer
