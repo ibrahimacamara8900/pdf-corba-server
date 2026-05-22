@@ -6,7 +6,7 @@ import java.util.*;
 
 public class WebServer extends NanoHTTPD {
     private final CORBAConnector corba;
-    private static final String HOME = System.getenv("APP_HOME") != null ? System.getenv("APP_HOME") + "/pdfs/" : System.getProperty("user.home") + "/pdf-corba-server/pdfs/";
+    private static final String HOME = System.getenv("RENDER") != null ? "/tmp/pdfs/" : (System.getenv("APP_HOME") != null ? System.getenv("APP_HOME") + "/pdfs/" : System.getProperty("user.home") + "/pdf-corba-server/pdfs/");
     private static final String RES  = System.getenv("APP_HOME") != null ? System.getenv("APP_HOME") + "/resources/" : System.getProperty("user.home") + "/pdf-corba-server/resources/";
     private final long startTime = System.currentTimeMillis();
 
