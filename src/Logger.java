@@ -11,7 +11,9 @@ public class Logger {
 
     static {
         try {
-            String logFile = System.getProperty("user.home") + "/pdf-corba-server/server.log";
+            String home = System.getenv("APP_HOME") != null ? "/tmp" : System.getProperty("user.home") + "/pdf-corba-server";
+            new java.io.File(home).mkdirs();
+            String logFile = home + "/server.log";
             fileWriter = new PrintWriter(new FileWriter(logFile, true), true);
         } catch (Exception e) { e.printStackTrace(); }
     }
