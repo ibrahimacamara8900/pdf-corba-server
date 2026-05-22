@@ -224,7 +224,7 @@ async function listFiles(){
   }catch(e){}
 }
 function fmt(b){return b>1048576?(b/1048576).toFixed(1)+'MB':b>1024?(b/1024).toFixed(0)+'KB':b+'B';}
-function fill(n){['tp','pp','sp','ep','dp','ip','mf1'].forEach(i=>{const e=g(i);if(e&&!e.value)e.value=n;});}
+function fill(n){['tp','pp','sp','ep','dp','ip','mf1','mf2'].forEach(i=>{const e=g(i);if(e&&!e.value)e.value=n;});}
 async function uploadFile(input){
   const file=input.files[0];if(!file)return;
   const fd=new FormData();fd.append('file',file);
