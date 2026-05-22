@@ -211,6 +211,20 @@ public class WebServer extends NanoHTTPD {
         CORBAConnector corba = new CORBAConnector(corbaHost, corbaPort);
         new WebServer(corba);
         Logger.ok("Interface: http://localhost:8080");
+        // Keep-alive thread pour Render Free
+        new Thread(() -> {
+            while (true) {
+                try {
+                    Thread.sleep(9 * 60 * 1000); // 9 minutes
+                    java.net.HttpURLConnection c = (java.net.HttpURLConnection)
+                        new java.net.URL("http://localhost:8080/api/status").openConnection();
+                    c.setConnectTimeout(5000);
+                    c.getResponseCode();
+                    c.disconnect();
+                    Logger.info("Keep-alive ping OK");
+                } catch (Exception e) {}
+            }
+        }).start();
         try { Thread.currentThread().join(); } catch (InterruptedException e) {}
     }
 }
