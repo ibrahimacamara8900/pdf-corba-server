@@ -2,7 +2,7 @@ import java.io.File;
 
 public class Validator {
 
-    private static final String HOME = System.getProperty("user.home") + "/pdf-corba-server/pdfs/";
+    private static final String HOME = System.getenv("APP_HOME") != null ? "/tmp/pdfs/" : System.getProperty("user.home") + "/pdf-corba-server/pdfs/";
 
     public static String requireFile(String name) throws ValidationException {
         if (name == null || name.trim().isEmpty())
